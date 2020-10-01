@@ -1,5 +1,6 @@
 
 exports.min = (array)=> {
+  if(array){
   if(array.length !== 0){
   array.sort(function(a,b){
     return a-b;
@@ -8,9 +9,13 @@ exports.min = (array)=> {
 }else {
   return 0;
 }
+  }else {
+    return 0;
+  }
 }
 
 exports.max = (array)=> {
+  if(array){
   if(array.length !== 0){
  array.sort(function(a,b){
     return a-b;
@@ -19,9 +24,14 @@ exports.max = (array)=> {
 }else{
   return 0;
 }
+}else{
+  return 0;
+}
+
 }
 
 exports.avg =  (array)=> {
+  if(array){
   if(array.length !== 0){
   array.sort(function(a,b){
     return a-b;
@@ -36,4 +46,8 @@ exports.avg =  (array)=> {
   }else{
     return 0;
   }
+}else{
+  return 0;
+}
+
 }
